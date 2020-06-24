@@ -1,0 +1,1 @@
+```python hack_train.py --name "Resnext101_Adam_14epochs_batch-size_256" --data "PATH_TO_DATA" --epochs 14 --batch-size 256 --gpu```
