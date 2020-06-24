@@ -1,13 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Бейзлайн для распознавания автомобильных номеров. 
-# 
-# MADE with love :)
-
-# In[1]:
-
-
 import os
 import gc
 import json
@@ -304,7 +294,7 @@ def get_detector_model():
     # Заморозим все слои кроме последних
     
     for param in model.parameters():
-        param.requires_grad = False
+        param.requires_grad = True
         
     for param in model.backbone.fpn.parameters():
         param.requires_grad = True
